@@ -1,3 +1,9 @@
 html {
   font-family: 'Montserrat', sans-serif;
 }
+:root {
+  --COLOR-PRIMARY: #393162;
+  --COLOR-SECONDARY: #fcfdff;
+  --COLOR-BACKGROUND: #051723;
+  --GRADIENT-PRIMARY: linear-gradient(270deg, #685be6 0%, #8980ee 100%);
+}
