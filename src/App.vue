@@ -1,19 +1,14 @@
 <template>
-  <div class="wrapper"></div>
+  <s-intro />
 </template>
 
 <script>
+import SIntro from '@/components/root/s-intro.vue'
+
 export default {
   name: 'App',
-  components: {},
+  components: {
+    SIntro,
+  },
 }
 </script>
-
-<style>
-.wrapper {
-  padding: 0 140px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-</style>
