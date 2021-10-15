@@ -8,6 +8,5 @@ html {
   --GRADIENT-PRIMARY: linear-gradient(270deg, #685be6 0%, #8980ee 100%);
 }
 .wrapper {
-  width: 100%;
   padding: 0 140px;
 }
