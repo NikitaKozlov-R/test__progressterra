@@ -1,5 +1,7 @@
 <template>
-  <s-substrate></s-substrate>
+  <s-substrate>
+    <div class="s-about"></div>
+  </s-substrate>
 </template>
 
 <script>
@@ -12,4 +14,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.test {
+  height: 601px;
+}
+</style>
