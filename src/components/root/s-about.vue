@@ -1,9 +1,15 @@
 <template>
-  <span></span>
+  <s-substrate></s-substrate>
 </template>
 
 <script>
-export default {}
+import SSubstrate from '@/components/helpers/s-substrate.vue'
+
+export default {
+  components: {
+    SSubstrate,
+  },
+}
 </script>
 
 <style></style>
