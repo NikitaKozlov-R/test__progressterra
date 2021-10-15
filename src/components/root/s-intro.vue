@@ -13,17 +13,29 @@
       </div>
     </header>
     <div class="wrapper">
-      <div class="s-welcome"></div>
+      <div class="s-main">
+        <div class="s-main__logo">
+          <s-main-logo />
+        </div>
+        <h2 class="s-main__subtitle">
+          Получайте дательную глубокую аналитику
+          <br />
+          с помощью сегментации клиентских баз
+        </h2>
+        <button class="s-main__button">Попробовать бесплатно</button>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import SHeaderLogo from '@/assets/img/logos/s-header-logo.vue'
+import SMainLogo from '@/assets/img/logos/s-main-logo.vue'
 
 export default {
   components: {
     SHeaderLogo,
+    SMainLogo,
   },
 }
 </script>
@@ -52,6 +64,7 @@ export default {
 .s-header__link {
   font-size: 18px;
   font-weight: 300;
+  color: var(--COLOR-PRIMARY);
   text-decoration: none;
   outline: none;
   border: none;
@@ -61,5 +74,29 @@ export default {
 }
 .s-header__link::-moz-focus-inner {
   border: 0;
+}
+.s-main {
+  padding: 88px 0 218px 0;
+}
+.s-main__logo {
+  margin-bottom: 7px;
+}
+.s-main__subtitle {
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--COLOR-PRIMARY);
+  line-height: 26.82px;
+  margin-bottom: 46px;
+}
+.s-main__button {
+  width: 414px;
+  height: 87px;
+  border-radius: 20px;
+  background: var(--GRADIENT-PRIMARY);
+  outline: none;
+  border: none;
+  font-size: 25px;
+  font-weight: normal;
+  color: #fff;
 }
 </style>
