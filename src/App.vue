@@ -1,5 +1,5 @@
 <template>
-  <span></span>
+  <div class="wrapper"></div>
 </template>
 
 <script>
@@ -9,4 +9,11 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.wrapper {
+  padding: 0 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+</style>
