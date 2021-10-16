@@ -31,10 +31,17 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 118px;
 }
 .s-company {
   width: calc(var(--content-width) + 80px);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.s-company__items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 </style>
