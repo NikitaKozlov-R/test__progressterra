@@ -2,8 +2,10 @@
   <div class="s-substrate" :style="{ borderRadius: radius }">
     <slot />
     <div class="s-substrate__circles">
-      <blur-circles v-if="mode" :style="{ marginLeft: left, marginTop: top }" />
-      <big-blur-circles v-if="!mode" :style="{ marginLeft: left, marginTop: top }" />
+      <div v-if="light" class="s-substrate__wrapper">
+        <blur-circles v-if="mode" :style="{ marginLeft: left, marginTop: top }" />
+        <big-blur-circles v-if="!mode" :style="{ marginLeft: left, marginTop: top }" />
+      </div>
     </div>
   </div>
 </template>
@@ -37,6 +39,11 @@ export default {
       type: String,
       required: false,
       default: '0px',
+    },
+    light: {
+      type: Boolean,
+      required: false,
+      default: true,
     },
   },
 }
