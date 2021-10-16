@@ -37,6 +37,13 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+}
+.company-item__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 212px;
 }
 .company-item__title {
   font-weight: 600;
@@ -44,6 +51,6 @@ export default {
   line-height: 32px;
   text-align: center;
   color: var(--color-primary);
-  margin-top: 33px;
+  margin-top: 16px;
 }
 </style>
