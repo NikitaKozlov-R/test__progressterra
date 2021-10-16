@@ -3,7 +3,7 @@
     <slot />
     <div class="s-substrate__circles">
       <blur-circles v-if="mode" :style="{ marginLeft: left, marginTop: top }" />
-      <big-blur-circles v-else />
+      <big-blur-circles v-else :style="{ marginLeft: left, marginTop: top }" />
     </div>
   </div>
 </template>

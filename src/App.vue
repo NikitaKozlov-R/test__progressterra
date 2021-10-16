@@ -6,6 +6,7 @@
   <s-company />
   <s-exemples />
   <s-clients />
+  <s-bonus />
 </template>
 
 <script>
@@ -16,6 +17,7 @@ import SManual from '@/components/root/s-manual.vue'
 import SCompany from '@/components/root/s-company.vue'
 import SExemples from '@/components/root/s-exemples.vue'
 import SClients from '@/components/root/s-clients.vue'
+import SBonus from '@/components/root/s-bonus.vue'
 
 export default {
   name: 'App',
@@ -27,6 +29,7 @@ export default {
     SCompany,
     SExemples,
     SClients,
+    SBonus,
   },
 }
 </script>
