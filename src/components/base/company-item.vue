@@ -21,12 +21,12 @@ export default {
   },
   data: () => ({
     images: {
-      swift: require('@/assets/img/icons/client-companies/swift.png'),
-      yandex: require('@/assets/img/icons/client-companies/yandex.png'),
-      kotlin: require('@/assets/img/icons/client-companies/kotlin.png'),
-      dotnet: require('@/assets/img/icons/client-companies/dotnet.png'),
-      azure: require('@/assets/img/icons/client-companies/azure.png'),
-      react: require('@/assets/img/icons/client-companies/react.png'),
+      swift: require('@/assets/img/icons/technologies/swift.png'),
+      yandex: require('@/assets/img/icons/technologies/yandex.png'),
+      kotlin: require('@/assets/img/icons/technologies/kotlin.png'),
+      dotnet: require('@/assets/img/icons/technologies/dotnet.png'),
+      azure: require('@/assets/img/icons/technologies/azure.png'),
+      react: require('@/assets/img/icons/technologies/react.png'),
     },
   }),
 }

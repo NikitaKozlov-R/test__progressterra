@@ -4,6 +4,7 @@
   <s-advantages />
   <s-manual />
   <s-company />
+  <s-exemples />
 </template>
 
 <script>
@@ -12,6 +13,7 @@ import SAbout from '@/components/root/s-about.vue'
 import SAdvantages from '@/components/root/s-advantages.vue'
 import SManual from '@/components/root/s-manual.vue'
 import SCompany from '@/components/root/s-company.vue'
+import SExemples from '@/components/root/s-exemples.vue'
 
 export default {
   name: 'App',
@@ -21,6 +23,7 @@ export default {
     SAdvantages,
     SManual,
     SCompany,
+    SExemples,
   },
 }
 </script>
