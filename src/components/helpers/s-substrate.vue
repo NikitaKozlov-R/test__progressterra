@@ -2,8 +2,8 @@
   <div class="s-substrate" :style="{ borderRadius: radius }">
     <slot />
     <div class="s-substrate__circles">
-      <big-blur-circles v-if="mode" />
-      <blur-circles v-else :style="{ marginLeft: left, marginTop: top }" />
+      <blur-circles v-if="mode" :style="{ marginLeft: left, marginTop: top }" />
+      <big-blur-circles v-else />
     </div>
   </div>
 </template>

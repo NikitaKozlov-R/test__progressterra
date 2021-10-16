@@ -1,5 +1,5 @@
 <template>
-  <s-substrate :mode="true">
+  <s-substrate :mode="false">
     <div class="s-about">
       <div class="s-about__inner">
         <img :src="aboutImage" alt="Картинка с компьютером MacBook Pro и листом в стакане" class="s-about__image" />
