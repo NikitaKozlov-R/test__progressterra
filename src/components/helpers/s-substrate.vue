@@ -20,12 +20,13 @@ export default {
 <style>
 .s-substrate {
   width: 100%;
-  background-color: var(--COLOR-BACKGROUND);
+  background-color: var(--color-background);
   position: relative;
 }
 .s-substrate__circles {
   position: absolute;
   top: 70px;
   left: 300px;
+  z-index: 0;
 }
 </style>

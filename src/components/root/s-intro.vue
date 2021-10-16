@@ -43,7 +43,7 @@ export default {
 <style>
 .s-intro {
   width: 100%;
-  background-image: url('../../assets/img/photos/s-intro-background.jpg');
+  background-image: url('~@/assets/img/photos/s-intro-background.jpg');
   background-position: right;
   background-repeat: no-repeat;
 }
@@ -64,7 +64,7 @@ export default {
 .s-header__link {
   font-size: 18px;
   font-weight: 300;
-  color: var(--COLOR-PRIMARY);
+  color: var(--color-primary);
   text-decoration: none;
   outline: none;
   border: none;
@@ -84,7 +84,7 @@ export default {
 .s-main__subtitle {
   font-size: 22px;
   font-weight: 400;
-  color: var(--COLOR-PRIMARY);
+  color: var(--color-primary);
   line-height: 26.82px;
   margin-bottom: 46px;
 }
@@ -92,7 +92,7 @@ export default {
   width: 414px;
   height: 87px;
   border-radius: 20px;
-  background: var(--GRADIENT-PRIMARY);
+  background: var(--gradient-primary);
   outline: none;
   border: none;
   font-size: 25px;
