@@ -60,38 +60,63 @@ export default {
   position: relative;
   z-index: 1;
 }
-
 .s-about__inner {
   align-self: flex-end;
   display: flex;
   gap: 130px;
 }
-
 .s-about__text {
   padding: 16px 0;
 }
-
 .s-about__details-wrapper {
   margin-top: 70px;
   width: 553px;
 }
-
 .s-about__details {
   font-weight: 300;
   font-size: 20px;
   line-height: 24px;
   color: var(--color-light-about);
 }
-
 .s-about__details--bold {
   font-weight: 600;
 }
-
 .s-about__details:not(:last-of-type) {
   margin-bottom: 24px;
 }
-
 .s-about__image {
   border-radius: 0px 20px 20px 0px;
+}
+@media screen and (max-width: 900px) {
+  .s-about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .s-about__inner {
+    flex-direction: column-reverse;
+    display: flex;
+    gap: 40px;
+  }
+  .s-about__details-wrapper {
+    margin-top: 0px;
+    width: auto;
+  }
+  .s-about__text {
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .s-about__details-wrapper {
+    margin-top: 70px;
+  }
+  .s-about__image {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 80px;
+  }
 }
 </style>

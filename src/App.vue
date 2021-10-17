@@ -1,15 +1,15 @@
 <template>
   <s-intro />
-  <!-- <s-about />
-  <s-advantages />
-  <s-manual />
-  <s-company />
-  <s-exemples />
-  <s-clients />
-  <s-bonus />
-  <s-practice />
-  <s-other />
-  <base-header /> -->
+  <s-about />
+  <!-- <s-advantages /> -->
+  <!-- <s-manual /> -->
+  <!-- <s-company /> -->
+  <!-- <s-exemples /> -->
+  <!-- <s-clients /> -->
+  <!-- <s-bonus /> -->
+  <!-- <s-practice /> -->
+  <!-- <s-other /> -->
+  <!-- <base-header /> -->
 </template>
 
 <script>
@@ -29,7 +29,7 @@ export default {
   name: 'App',
   components: {
     SIntro,
-    // SAbout,
+    SAbout,
     // SAdvantages,
     // SManual,
     // SCompany,
