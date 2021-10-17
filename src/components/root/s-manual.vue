@@ -37,16 +37,30 @@ export default {
   display: flex;
   justify-content: center;
 }
-
 .s-manual {
   height: 345px;
   width: var(--content-width);
 }
-
 .s-manual__list {
   margin-top: 79px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+}
+@media screen and (max-width: 900px) {
+  .s-manual__list {
+    margin-top: 79px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+  }
+  .s-manual__wrapper {
+    padding: 0 20px;
+    margin-bottom: 160px;
+  }
+  .s-manual {
+    height: auto;
+    width: auto;
+  }
 }
 </style>

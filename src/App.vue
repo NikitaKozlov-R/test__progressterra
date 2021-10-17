@@ -2,7 +2,7 @@
   <s-intro />
   <s-about />
   <s-advantages />
-  <!-- <s-manual /> -->
+  <s-manual />
   <!-- <s-company /> -->
   <!-- <s-exemples /> -->
   <!-- <s-clients /> -->
@@ -31,7 +31,7 @@ export default {
     SIntro,
     SAbout,
     SAdvantages,
-    // SManual,
+    SManual,
     // SCompany,
     // SExemples,
     // SClients,

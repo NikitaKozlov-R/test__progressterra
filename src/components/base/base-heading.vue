@@ -30,6 +30,7 @@ export default {
 @media screen and (max-width: 900px) {
   .base-heading {
     text-align: center;
+    font-size: 35px;
   }
 }
 </style>
