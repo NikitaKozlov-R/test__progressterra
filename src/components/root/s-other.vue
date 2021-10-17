@@ -7,7 +7,7 @@
         </base-heading>
       </div>
       <div class="s-other__inner">
-        <s-substrate top="-20%" left="80%" :mode="true" radius="19px">
+        <s-substrate top="-8%" left="100%" :mode="true" radius="19px">
           <div class="s-other__item">
             <div class="s-other__article">
               <div>
@@ -27,36 +27,40 @@
         </s-substrate>
       </div>
       <div class="s-other__inner">
-        <s-substrate top="-20%" left="80%" :mode="true" radius="19px">
+        <s-substrate top="-20%" left="-75%" :mode="true" radius="19px">
           <div class="s-other__item">
             <div class="s-other__article">
-              <h3 class="s-other__heading">Мессенджер</h3>
-              <p class="s-other__chapter">
-                Дайте возможность клиентам или пользователям общаться с вами. Наш мессенджер будет собирать все ваши
-                заявки и обращения в одном месте. Больше вы не пропустите ни одного сообщения, а также сможете рассылать
-                в месенжере полезную информацию об акциях и скидках!
-              </p>
+              <div>
+                <h3 class="s-other__heading">Мессенджер</h3>
+                <p class="s-other__chapter">
+                  Дайте возможность клиентам или пользователям общаться с вами. Наш мессенджер будет собирать все ваши
+                  заявки и обращения в одном месте. Больше вы не пропустите ни одного сообщения, а также сможете
+                  рассылать в месенжере полезную информацию об акциях и скидках!
+                </p>
+              </div>
               <base-button width="414px">Попробовать бесплатно</base-button>
             </div>
             <div class="s-other__logo">
-              <ratings-logo />
+              <messenger-logo />
             </div>
           </div>
         </s-substrate>
       </div>
       <div class="s-other__inner">
-        <s-substrate top="-20%" left="80%" :mode="true" radius="19px">
+        <s-substrate top="0%" left="0%" :mode="true" radius="19px">
           <div class="s-other__item">
             <div class="s-other__article">
-              <h3 class="s-other__heading">Сгораемые бонусы</h3>
-              <p class="s-other__chapter">
-                Бонусная программа лояльности с ограниченным периодом использования, мотивирует ваши клиентов
-                возвращаться к вам за покупками.
-              </p>
+              <div>
+                <h3 class="s-other__heading">Сгораемые бонусы</h3>
+                <p class="s-other__chapter">
+                  Бонусная программа лояльности с ограниченным периодом использования, мотивирует ваши клиентов
+                  возвращаться к вам за покупками.
+                </p>
+              </div>
               <base-button width="414px">Попробовать бесплатно</base-button>
             </div>
             <div class="s-other__logo">
-              <ratings-logo />
+              <bonus-logo />
             </div>
           </div>
         </s-substrate>
@@ -73,6 +77,8 @@ import BaseHeading from '@/components/base/base-heading.vue'
 import SSubstrate from '@/components/helpers/s-substrate.vue'
 import BaseButton from '@/components/base/base-button.vue'
 import RatingsLogo from '../../assets/img/logos/ratings-logo.vue'
+import MessengerLogo from '../../assets/img/logos/messenger-logo.vue'
+import BonusLogo from '../../assets/img/logos/bonus-logo.vue'
 
 export default {
   components: {
@@ -80,6 +86,8 @@ export default {
     SSubstrate,
     BaseButton,
     RatingsLogo,
+    MessengerLogo,
+    BonusLogo,
   },
 }
 </script>
@@ -109,7 +117,6 @@ export default {
 }
 .s-other__article {
   display: flex;
-  gap: 30px;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -119,6 +126,7 @@ export default {
   font-weight: 700;
   color: #fff;
   margin-top: 58px;
+  margin-bottom: 30px;
 }
 .s-other__chapter {
   font-weight: 300;

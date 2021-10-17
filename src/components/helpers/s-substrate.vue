@@ -4,7 +4,7 @@
     <div class="s-substrate__circles">
       <div v-if="light" class="s-substrate__wrapper">
         <blur-circles v-if="mode" :style="{ marginLeft: left, marginTop: top }" />
-        <big-blur-circles v-if="!mode" :style="{ marginLeft: left, marginTop: top }" />
+        <big-blur-circles v-else :style="{ marginLeft: left, marginTop: top }" />
       </div>
     </div>
   </div>
@@ -54,6 +54,7 @@ export default {
   width: 100%;
   background-color: var(--color-background);
   position: relative;
+  overflow: hidden;
 }
 .s-substrate__circles {
   position: absolute;

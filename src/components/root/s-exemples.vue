@@ -36,7 +36,7 @@
             </div>
           </div>
         </s-substrate>
-        <s-substrate top="-20%" left="80%" :mode="true" radius="19px">
+        <s-substrate top="0%" left="0%" :mode="true" radius="19px">
           <div class="s-exemples__article">
             <h4 class="s-exemples__heading">3. Деление сегментов</h4>
             <div class="s-exemples__chapter">
