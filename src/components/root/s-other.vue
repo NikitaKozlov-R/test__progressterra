@@ -2,24 +2,68 @@
   <div class="s-other__wrapper">
     <div class="s-other">
       <div class="base-heading__wrap">
-        <base-heading color="color-primary">Другие сервисы облачной платформы лояльности iProBonus</base-heading>
+        <base-heading color="color-primary" align="center">
+          Другие сервисы облачной платформы лояльности iProBonus
+        </base-heading>
       </div>
-      <s-substrate top="-20%" left="80%" :mode="true" radius="19px">
-        <div class="s-other__item">
-          <div class="s-other__article">
-            <h3 class="s-other__heading">Cгораемые рейтинги</h3>
-            <p class="s-other__chapter">
-              С этим сервисом вы сможете составлять и присваивать рейтинги вашим клиентам или пользователям из различных
-              источников и назначать время жизни для каждого начисления рейтинга. Поощрайте ваших пользователей или
-              клиентов за стремление повысить рейтинг и получайте клентов на всю жизнь!
-            </p>
-            <base-button width="414px">Попробовать бесплатно</base-button>
+      <div class="s-other__inner">
+        <s-substrate top="-20%" left="80%" :mode="true" radius="19px">
+          <div class="s-other__item">
+            <div class="s-other__article">
+              <div>
+                <h3 class="s-other__heading">Cгораемые рейтинги</h3>
+                <p class="s-other__chapter">
+                  С этим сервисом вы сможете составлять и присваивать рейтинги вашим клиентам или пользователям из
+                  различных источников и назначать время жизни для каждого начисления рейтинга. Поощрайте ваших
+                  пользователей или клиентов за стремление повысить рейтинг и получайте клентов на всю жизнь!
+                </p>
+              </div>
+              <base-button width="414px">Попробовать бесплатно</base-button>
+            </div>
+            <div class="s-other__logo">
+              <ratings-logo />
+            </div>
           </div>
-          <div class="s-other__logo">
-            <ratings-logo />
+        </s-substrate>
+      </div>
+      <div class="s-other__inner">
+        <s-substrate top="-20%" left="80%" :mode="true" radius="19px">
+          <div class="s-other__item">
+            <div class="s-other__article">
+              <h3 class="s-other__heading">Мессенджер</h3>
+              <p class="s-other__chapter">
+                Дайте возможность клиентам или пользователям общаться с вами. Наш мессенджер будет собирать все ваши
+                заявки и обращения в одном месте. Больше вы не пропустите ни одного сообщения, а также сможете рассылать
+                в месенжере полезную информацию об акциях и скидках!
+              </p>
+              <base-button width="414px">Попробовать бесплатно</base-button>
+            </div>
+            <div class="s-other__logo">
+              <ratings-logo />
+            </div>
           </div>
-        </div>
-      </s-substrate>
+        </s-substrate>
+      </div>
+      <div class="s-other__inner">
+        <s-substrate top="-20%" left="80%" :mode="true" radius="19px">
+          <div class="s-other__item">
+            <div class="s-other__article">
+              <h3 class="s-other__heading">Сгораемые бонусы</h3>
+              <p class="s-other__chapter">
+                Бонусная программа лояльности с ограниченным периодом использования, мотивирует ваши клиентов
+                возвращаться к вам за покупками.
+              </p>
+              <base-button width="414px">Попробовать бесплатно</base-button>
+            </div>
+            <div class="s-other__logo">
+              <ratings-logo />
+            </div>
+          </div>
+        </s-substrate>
+      </div>
+      <div class="s-other__button-wrapper">
+        <base-button width="504px">Смотреть все сервисы компании</base-button>
+      </div>
     </div>
   </div>
 </template>
@@ -39,3 +83,53 @@ export default {
   },
 }
 </script>
+
+<style>
+.s-other__wrapper {
+  padding: 0 140px;
+}
+.s-other {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.base-heading__wrap {
+  width: 524px;
+  margin-bottom: 70px;
+}
+.s-other__inner {
+  margin-bottom: 50px;
+}
+.s-other__item {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  padding: 0 45px 50px 70px;
+  height: 420px;
+}
+.s-other__article {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.s-other__heading {
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 58px;
+}
+.s-other__chapter {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 132%;
+  color: #fff;
+}
+.s-other__logo {
+  margin-top: 36px;
+}
+.s-other__button-wrapper {
+  margin-bottom: 120px;
+}
+</style>

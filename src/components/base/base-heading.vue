@@ -1,5 +1,5 @@
 <template>
-  <h3 class="base-heading" :style="{ color: `var(--${color})` }">
+  <h3 class="base-heading" :style="{ color: `var(--${color})`, textAlign: align }">
     <slot></slot>
   </h3>
 </template>
@@ -11,6 +11,11 @@ export default {
       required: false,
       type: String,
       default: 'color-primary',
+    },
+    align: {
+      required: false,
+      type: String,
+      default: 'left',
     },
   },
 }
