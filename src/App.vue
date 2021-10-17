@@ -3,7 +3,7 @@
   <s-about />
   <s-advantages />
   <s-manual />
-  <!-- <s-company /> -->
+  <s-company />
   <!-- <s-exemples /> -->
   <!-- <s-clients /> -->
   <!-- <s-bonus /> -->
@@ -32,7 +32,7 @@ export default {
     SAbout,
     SAdvantages,
     SManual,
-    // SCompany,
+    SCompany,
     // SExemples,
     // SClients,
     // SBonus,

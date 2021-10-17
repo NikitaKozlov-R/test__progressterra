@@ -45,4 +45,17 @@ export default {
   justify-content: space-between;
   margin-top: 64px;
 }
+@media screen and (max-width: 900px) {
+  .s-company__wrapper {
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 160px;
+  }
+  .s-company {
+    width: 100%;
+  }
+  .s-company__items {
+    flex-flow: row wrap;
+  }
+}
 </style>

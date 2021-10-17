@@ -1,7 +1,7 @@
 <template>
   <div class="company-item">
     <div class="company-item__image">
-      <img :src="images[image]" />
+      <img class="company-item__image-mobile" :src="images[image]" />
     </div>
     <p class="company-item__title">
       <slot />
@@ -73,5 +73,17 @@ export default {
   text-align: center;
   color: var(--color-primary);
   margin-top: 16px;
+}
+@media screen and (max-width: 900px) {
+  .company-item__image-mobile {
+    height: 92px;
+  }
+  .company-item__title {
+    margin-top: 0px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: -30px;
+  }
 }
 </style>
