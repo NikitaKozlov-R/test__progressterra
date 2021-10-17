@@ -30,18 +30,31 @@ export default {
   display: flex;
   justify-content: center;
 }
-
 .s-advantages {
   height: 566px;
   width: var(--content-width);
   padding-top: 80px;
 }
-
 .s-advantages__list {
   margin-top: 65px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 54px 0;
+}
+@media screen and (max-width: 900px) {
+  .s-advantages__wrapper {
+    padding: 0 20px;
+    margin-bottom: 160px;
+  }
+  .s-advantages__list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 32px;
+  }
+  .s-advantages {
+    height: auto;
+    width: auto;
+  }
 }
 </style>

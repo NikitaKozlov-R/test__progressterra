@@ -15,7 +15,7 @@ export default {
     align: {
       required: false,
       type: String,
-      default: 'left',
+      default: '',
     },
   },
 }
@@ -26,5 +26,10 @@ export default {
   font-weight: 800;
   font-size: 40px;
   line-height: 49px;
+}
+@media screen and (max-width: 900px) {
+  .base-heading {
+    text-align: center;
+  }
 }
 </style>

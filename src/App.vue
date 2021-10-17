@@ -1,7 +1,7 @@
 <template>
   <s-intro />
   <s-about />
-  <!-- <s-advantages /> -->
+  <s-advantages />
   <!-- <s-manual /> -->
   <!-- <s-company /> -->
   <!-- <s-exemples /> -->
@@ -30,7 +30,7 @@ export default {
   components: {
     SIntro,
     SAbout,
-    // SAdvantages,
+    SAdvantages,
     // SManual,
     // SCompany,
     // SExemples,

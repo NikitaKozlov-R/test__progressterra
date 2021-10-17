@@ -50,27 +50,33 @@ export default {
 .list-item {
   display: flex;
 }
-
 .list-item--image {
   width: 33.3333%;
   gap: 20px;
 }
-
 .list-item--number {
   display: grid;
   grid-template-columns: 64px 1fr;
 }
-
 .list-item__number {
   font-weight: 300;
   font-size: 60px;
   color: var(--color-primary);
 }
-
 .list-item__text {
   font-weight: 300;
   font-size: 25px;
   color: var(--color-primary);
   line-height: 30px;
+}
+@media screen and (max-width: 900px) {
+  .list-item--image {
+    width: 100%;
+    gap: 20px;
+  }
+  .list-item__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 </style>
