@@ -12,6 +12,11 @@
           с помощью сегментации клиентских баз
         </h2>
         <button class="s-main__button">Попробовать бесплатно</button>
+        <img
+          class="s-main__photo"
+          src="../../assets/img/photos/s-intro-background.jpg"
+          alt="Футуристический дизайн и рука"
+        />
       </div>
     </div>
   </div>
@@ -41,6 +46,8 @@ export default {
 }
 .s-main__logo {
   margin-bottom: 7px;
+  width: 457px;
+  height: 102px;
 }
 .s-main__subtitle {
   font-size: 22px;
@@ -59,5 +66,42 @@ export default {
   font-size: 25px;
   font-weight: normal;
   color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.s-main__photo {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .s-intro {
+    background-image: unset;
+    overflow-x: hidden;
+  }
+  .s-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+  }
+  .s-main__logo {
+    margin-bottom: 7px;
+    width: 234px;
+    height: 78px;
+  }
+  .s-main__subtitle {
+    text-align: center;
+    width: 90%;
+  }
+  .s-main__button {
+    width: 100%;
+  }
+  .s-main__photo {
+    display: block;
+    height: 410px;
+    margin-left: -230px;
+    margin-top: -10px;
+    position: relative;
+    z-index: 0;
+  }
 }
 </style>

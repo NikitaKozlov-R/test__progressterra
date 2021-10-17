@@ -1,6 +1,6 @@
 <template>
   <s-intro />
-  <s-about />
+  <!-- <s-about />
   <s-advantages />
   <s-manual />
   <s-company />
@@ -9,7 +9,7 @@
   <s-bonus />
   <s-practice />
   <s-other />
-  <base-header />
+  <base-header /> -->
 </template>
 
 <script>
@@ -29,16 +29,16 @@ export default {
   name: 'App',
   components: {
     SIntro,
-    SAbout,
-    SAdvantages,
-    SManual,
-    SCompany,
-    SExemples,
-    SClients,
-    SBonus,
-    SPractice,
-    SOther,
-    BaseHeader,
+    // SAbout,
+    // SAdvantages,
+    // SManual,
+    // SCompany,
+    // SExemples,
+    // SClients,
+    // SBonus,
+    // SPractice,
+    // SOther,
+    // BaseHeader,
   },
 }
 </script>

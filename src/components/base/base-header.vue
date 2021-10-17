@@ -10,6 +10,9 @@
       <a href="#" class="s-header__link">IProBonus</a>
       <a href="#" class="s-header__link">Другие сервисы</a>
     </div>
+    <div class="s-header__menu-mobile">
+      <img src="../../assets/img/graphics/menu.png" />
+    </div>
   </header>
 </template>
 
@@ -38,6 +41,9 @@ export default {
   gap: 31px;
   margin-right: 50px;
 }
+.s-header__menu-mobile {
+  display: none;
+}
 .s-header__link {
   font-size: 18px;
   font-weight: 300;
@@ -51,5 +57,21 @@ export default {
 }
 .s-header__link::-moz-focus-inner {
   border: 0;
+}
+@media screen and (max-width: 900px) {
+  .s-header {
+    height: auto;
+  }
+  .s-header__logo {
+    margin: 55px 0 0 20px;
+  }
+  .s-header__menu {
+    display: none;
+  }
+  .s-header__menu-mobile {
+    display: flex;
+    margin-right: 20px;
+    margin-top: 42px;
+  }
 }
 </style>

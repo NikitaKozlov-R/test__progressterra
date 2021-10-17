@@ -5,10 +5,15 @@ html {
   --color-primary: #393162;
   --color-secondary: #fcfdff;
   --color-background: #051723;
-  --color-light-about: #FCFDFF;
+  --color-light-about: #fcfdff;
   --gradient-primary: linear-gradient(270deg, #685be6 0%, #8980ee 100%);
   --content-width: 1160px;
 }
 .wrapper {
   padding: 0 140px;
+}
+@media screen and (max-width: 900px) {
+  .wrapper {
+    padding: 0 20px;
+  }
 }
