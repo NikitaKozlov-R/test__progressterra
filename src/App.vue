@@ -8,8 +8,10 @@
   <s-clients />
   <s-bonus />
   <s-practice />
-  <!-- <s-other /> -->
-  <!-- <base-header /> -->
+  <s-other />
+  <div class="base-header__mobile">
+    <base-header />
+  </div>
 </template>
 
 <script>
@@ -37,8 +39,16 @@ export default {
     SClients,
     SBonus,
     SPractice,
-    // SOther,
-    // BaseHeader,
+    SOther,
+    BaseHeader,
   },
 }
 </script>
+
+<style>
+@media screen and (max-width: 900px) {
+  .base-header__mobile {
+    display: none;
+  }
+}
+</style>

@@ -18,7 +18,12 @@
                   пользователей или клиентов за стремление повысить рейтинг и получайте клентов на всю жизнь!
                 </p>
               </div>
-              <base-button width="414px">Попробовать бесплатно</base-button>
+              <div class="s-other__button--desctop">
+                <base-button width="414px">Попробовать бесплатно</base-button>
+              </div>
+              <div class="s-other__button--mobile">
+                <base-button width="331px">Попробовать бесплатно</base-button>
+              </div>
             </div>
             <div class="s-other__logo">
               <ratings-logo />
@@ -38,7 +43,12 @@
                   рассылать в месенжере полезную информацию об акциях и скидках!
                 </p>
               </div>
-              <base-button width="414px">Попробовать бесплатно</base-button>
+              <div class="s-other__button--desctop">
+                <base-button width="414px">Попробовать бесплатно</base-button>
+              </div>
+              <div class="s-other__button--mobile">
+                <base-button width="331px">Попробовать бесплатно</base-button>
+              </div>
             </div>
             <div class="s-other__logo">
               <messenger-logo />
@@ -57,7 +67,12 @@
                   возвращаться к вам за покупками.
                 </p>
               </div>
-              <base-button width="414px">Попробовать бесплатно</base-button>
+              <div class="s-other__button--desctop">
+                <base-button width="414px">Попробовать бесплатно</base-button>
+              </div>
+              <div class="s-other__button--mobile">
+                <base-button width="331px">Попробовать бесплатно</base-button>
+              </div>
             </div>
             <div class="s-other__logo">
               <bonus-logo />
@@ -66,7 +81,12 @@
         </s-substrate>
       </div>
       <div class="s-other__button-wrapper">
-        <base-button width="504px">Смотреть все сервисы компании</base-button>
+        <div class="s-other__button--desctop">
+          <base-button width="504px">Смотреть все сервисы компании</base-button>
+        </div>
+        <div class="s-other__button--mobile">
+          <base-button width="370px">Попробовать бесплатно</base-button>
+        </div>
       </div>
     </div>
   </div>
@@ -139,5 +159,31 @@ export default {
 }
 .s-other__button-wrapper {
   margin-bottom: 120px;
+}
+.s-other__button--mobile {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .s-other__wrapper {
+    padding: 0 0px;
+  }
+  .base-heading__wrap {
+    width: 380px;
+    margin-bottom: 70px;
+  }
+  .s-other__item {
+    flex-direction: column;
+    height: auto;
+    padding: 0 20px 50px 20px;
+    align-items: center;
+  }
+  .s-other__button--desctop {
+    display: none;
+  }
+  .s-other__button--mobile {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
 }
 </style>
