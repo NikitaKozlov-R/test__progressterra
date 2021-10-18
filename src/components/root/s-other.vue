@@ -90,6 +90,9 @@
       </div>
     </div>
   </div>
+  <div class="base-header__mobile">
+    <base-header />
+  </div>
 </template>
 
 <script>
@@ -99,6 +102,7 @@ import BaseButton from '@/components/base/base-button.vue'
 import RatingsLogo from '../../assets/img/logos/ratings-logo.vue'
 import MessengerLogo from '../../assets/img/logos/messenger-logo.vue'
 import BonusLogo from '../../assets/img/logos/bonus-logo.vue'
+import BaseHeader from '@/components/base/base-header.vue'
 
 export default {
   components: {
@@ -108,6 +112,7 @@ export default {
     RatingsLogo,
     MessengerLogo,
     BonusLogo,
+    BaseHeader,
   },
 }
 </script>
@@ -184,6 +189,11 @@ export default {
     display: flex;
     justify-content: center;
     margin-top: 40px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .base-header__mobile {
+    display: none;
   }
 }
 </style>

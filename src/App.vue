@@ -9,9 +9,6 @@
   <s-bonus />
   <s-practice />
   <s-other />
-  <div class="base-header__mobile">
-    <base-header />
-  </div>
 </template>
 
 <script>
@@ -25,7 +22,6 @@ import SClients from '@/components/root/s-clients.vue'
 import SBonus from '@/components/root/s-bonus.vue'
 import SPractice from '@/components/root/s-practice.vue'
 import SOther from '@/components/root/s-other.vue'
-import BaseHeader from '@/components/base/base-header.vue'
 
 export default {
   name: 'App',
@@ -40,15 +36,6 @@ export default {
     SBonus,
     SPractice,
     SOther,
-    BaseHeader,
   },
 }
 </script>
-
-<style>
-@media screen and (max-width: 900px) {
-  .base-header__mobile {
-    display: none;
-  }
-}
-</style>
