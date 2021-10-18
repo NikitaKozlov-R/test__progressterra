@@ -4,7 +4,7 @@
   <s-advantages />
   <s-manual />
   <s-company />
-  <!-- <s-exemples /> -->
+  <s-exemples />
   <!-- <s-clients /> -->
   <!-- <s-bonus /> -->
   <!-- <s-practice /> -->
@@ -33,7 +33,7 @@ export default {
     SAdvantages,
     SManual,
     SCompany,
-    // SExemples,
+    SExemples,
     // SClients,
     // SBonus,
     // SPractice,

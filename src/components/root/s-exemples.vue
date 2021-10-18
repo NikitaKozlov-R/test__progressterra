@@ -3,7 +3,7 @@
     <div class="s-exemples">
       <base-heading color="color-primary">Примеры операций с клиентскими сегментами</base-heading>
       <div class="s-exemples__inner">
-        <s-substrate top="-20%" left="80%" :mode="true" radius="19px">
+        <s-substrate top="50%" left="-50%" :mode="true" radius="19px">
           <div class="s-exemples__article">
             <h4 class="s-exemples__heading">1. Сложение сегментов</h4>
             <div class="s-exemples__chapter">
@@ -20,7 +20,7 @@
             </div>
           </div>
         </s-substrate>
-        <s-substrate top="-15%" left="-65%" :mode="true" radius="19px">
+        <s-substrate top="-15%" left="-90%" :mode="true" radius="19px">
           <div class="s-exemples__article">
             <h4 class="s-exemples__heading">2. Вычитание сегментов</h4>
             <div class="s-exemples__chapter">
@@ -36,7 +36,7 @@
             </div>
           </div>
         </s-substrate>
-        <s-substrate top="0%" left="0%" :mode="true" radius="19px">
+        <s-substrate top="0%" left="-60%" :mode="true" radius="19px">
           <div class="s-exemples__article">
             <h4 class="s-exemples__heading">3. Деление сегментов</h4>
             <div class="s-exemples__chapter">
@@ -117,5 +117,24 @@ export default {
 }
 .s-exemples__chapter-text.italic {
   font-style: italic;
+}
+@media screen and (max-width: 900px) {
+  .s-exemples__wrapper {
+    padding: 0 0;
+    margin-bottom: 160px;
+  }
+  .s-exemples__article {
+    height: auto;
+  }
+  .s-exemples__heading {
+    font-size: 23px;
+  }
+  .s-exemples__chapter {
+    flex-direction: column;
+  }
+  .s-exemples__chapter-text {
+    width: 100%;
+    font-size: 18px;
+  }
 }
 </style>
