@@ -87,4 +87,19 @@ export default {
   border-radius: 20px;
   margin-top: 64px;
 }
+@media screen and (max-width: 900px) {
+  .s-bonus__wrapper {
+    padding: 0 0;
+    margin-bottom: 160px;
+  }
+  .s-bonus {
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .s-bonus__img {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+}
 </style>

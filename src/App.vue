@@ -6,7 +6,7 @@
   <s-company />
   <s-exemples />
   <s-clients />
-  <!-- <s-bonus /> -->
+  <s-bonus />
   <!-- <s-practice /> -->
   <!-- <s-other /> -->
   <!-- <base-header /> -->
@@ -35,7 +35,7 @@ export default {
     SCompany,
     SExemples,
     SClients,
-    // SBonus,
+    SBonus,
     // SPractice,
     // SOther,
     // BaseHeader,
