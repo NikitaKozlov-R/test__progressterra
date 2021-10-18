@@ -71,4 +71,16 @@ export default {
   color: #fff;
   padding-top: 19px;
 }
+@media screen and (max-width: 900px) {
+  .s-practice__wrapper {
+    padding: 0 0px 160px 0px;
+  }
+  .s-practice__inner {
+    flex-direction: column;
+  }
+  .s-practice__item {
+    padding: 0 45px 45px 45px;
+    height: auto;
+  }
+}
 </style>
